@@ -50,6 +50,11 @@ public:
     {
         return e[0] * e[0] + e[1] * e[1] + e[2] * e[2];
     }
+    bool near_zero() const {
+        // Return true if the vector is close to zero in all dimensions.
+        const auto s = 1e-8;
+        return fabs(e[0]) < s && fabs(e[1]) < s && fabs(e[2]) < s;
+    }
 
     inline friend std::ostream& operator<<(std::ostream& out, const vec3& v);
     inline friend vec3 operator+(const vec3& u, const vec3& v);
@@ -122,7 +127,7 @@ inline vec3 unit_vector(vec3 v)
 }
 vec3 random_in_unit_sphere() {
     while (true) {
-        auto p = vec3::random(-1,1);
+        auto p = vec3::random(-1, 1);
         if (p.length_squared() >= 1) continue;
         return p;
     }
@@ -139,6 +144,11 @@ vec3 random_in_hemisphere(const vec3& normal) {
         return -in_unit_sphere;
     }
 }
+
+vec3 reflect(const vec3& v, const vec3& n) {
+    return v - 2 * dot(v, n) * n;
+}
+
 
 using point3 = vec3;
 using color = vec3;
