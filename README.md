@@ -23,8 +23,8 @@ Ray tracing is a rendering technique used in computer graphics to generate photo
 - Support for sphere primitives
 - Lambertian, metal, and dielectric materials
 - Anti-aliasing
-- Multisampling for soft shadows and depth of field
-- Parallel rendering using multi-threading
+- Positionable Camera
+- Defocus Blur
 
 ## Dependencies
 
