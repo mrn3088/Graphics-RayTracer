@@ -1,5 +1,7 @@
 # Raytracer Implementation Based On "Ray Tracing in One Weekend"
 
+[![License](https://img.shields.io/github/license/mrn3088/Graphics-RayTracer)](LICENSE)
+
 This repository contains an implementation of a raytracer based on the popular book ["Ray Tracing in One Weekend"](https://raytracing.github.io/books/RayTracingInOneWeekend.html) by Peter Shirley. The project is designed to provide an introduction to the concepts of ray tracing and guide you through building a simple, yet powerful, ray tracing renderer from scratch.
 
 ![Final Scene Placeholder](./image.jpeg)
