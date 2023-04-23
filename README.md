@@ -27,6 +27,9 @@ Ray tracing is a rendering technique used in computer graphics to generate photo
 - Anti-aliasing
 - Positionable Camera
 - Defocus Blur
+- Motion Blur
+- Bounding Volumn Hierarchies
+- Perlin Noise Texture
 
 ## Dependencies
 
