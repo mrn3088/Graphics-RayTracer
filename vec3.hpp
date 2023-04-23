@@ -73,7 +73,7 @@ public:
     inline static vec3 random(double min, double max) {
         return vec3(random_double(min, max), random_double(min, max), random_double(min, max));
     }
-protected:
+
     double e[3];
 };
 inline std::ostream& operator<<(std::ostream& out, const vec3& v)
