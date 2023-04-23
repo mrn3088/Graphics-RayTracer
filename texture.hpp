@@ -53,8 +53,7 @@ public:
     noise_texture(double sc) : scale(sc) {}
 
     virtual color value(double u, double v, const point3& p) const override {
-        // cast the perlin output back to between 0 and 1
-        return color(1, 1, 1) * 0.5 * (1.0 + noise.noise(scale * p));
+        return color(1,1,1) * 0.5 * (1 + sin(scale*p.z() + 10*noise.turb(p)));
     }
 
 public:
