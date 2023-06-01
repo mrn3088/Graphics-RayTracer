@@ -1,4 +1,4 @@
-# Raytracer!"
+# Raytracer!
 
 [![License](https://img.shields.io/github/license/mrn3088/Graphics-RayTracer)](LICENSE)
 
